@@ -844,7 +844,6 @@
 			"icon_image_path"		"map_icons/mapgroup_icon_reserves"
 			"maps"
 			{
-				"de_inferno"	""
 				"de_vertigo"	""
 				"de_cbble"		""
 			}
@@ -861,13 +860,10 @@
 			"icon_image_path"		"map_icons/mapgroup_icon_reserves"
 			"maps"
 			{
-				"$2000$"	""
 				"aim_ag_texture2"	""
-				"aim_map"		""
-				"aim_texture_canyon_final"		""
-				"de_piranesi_s2"		""
-				"de_survivor_s2_nofog"		""
 				"fy_pool_day"		""
+				"surf_castle"		""
+				"surf_ski_2"		""
 			}
 		}
 		
@@ -3728,6 +3724,59 @@
 			"nameID"				"#SFUI_Map_fy_pool_day"
 			"name"					"fy_pool_day"
 			"imagename"				"map-fy_pool_day-overall"
+			"default_game_type"		"0" // classic
+			"default_game_mode"		"0" // casual
+			"t_arms"				"models/weapons/t_arms_leet.vmdl"
+			"t_models"
+			{
+				"tm_leet_variantA"	""
+				"tm_leet_variantB"	""
+				"tm_leet_variantC"	""
+				"tm_leet_variantD"	""
+				"tm_leet_variantE"	""
+			}
+			"ct_arms"			"models/weapons/ct_arms_sas.vmdl"
+			"ct_models"
+			{
+				"ctm_sas"		""
+				"ctm_sas_variantA"	""
+				"ctm_sas_variantB"	""
+				"ctm_sas_variantC"	""
+				"ctm_sas_variantD"	""
+			}
+		}
+		"surf_castle"
+		{
+			"nameID"				"#SFUI_Map_surf_castle"
+			"name"					"surf_castle"
+			"imagename"				"map-surf_castle-overall"
+			"default_game_type"		"0" // classic
+			"default_game_mode"		"0" // casual
+			"t_arms"				"models/weapons/t_arms_leet.vmdl"
+			"t_models"
+			{
+				"tm_leet_variantA"	""
+				"tm_leet_variantB"	""
+				"tm_leet_variantC"	""
+				"tm_leet_variantD"	""
+				"tm_leet_variantE"	""
+			}
+			"ct_arms"			"models/weapons/ct_arms_sas.vmdl"
+			"ct_models"
+			{
+				"ctm_sas"		""
+				"ctm_sas_variantA"	""
+				"ctm_sas_variantB"	""
+				"ctm_sas_variantC"	""
+				"ctm_sas_variantD"	""
+			}
+		}
+
+		"surf_ski_2"
+		{
+			"nameID"				"#SFUI_Map_surf_ski_2"
+			"name"					"surf_ski_2"
+			"imagename"				"map-surf_ski_2-overall"
 			"default_game_type"		"0" // classic
 			"default_game_mode"		"0" // casual
 			"t_arms"				"models/weapons/t_arms_leet.vmdl"

@@ -28331,14 +28331,10 @@
 		
 		"SFUI_Map_workshop_preview"	"Preview"
 		
-		"SFUI_Map_de_mirage_csgo"		"Mirage CS:GO"
-		"SFUI_Map_$2000$"				"$2000$"
-		"SFUI_Map_aim_map"				"Aim Map"
 		"SFUI_Map_aim_ag_texture2"		"Aim AG"
-		"SFUI_Map_aim_texture_canyon_final"		"Aim Canyon"
-		"SFUI_Map_de_piranesi_s2"		"Piranesi"
-		"SFUI_Map_de_survivor_s2_nofog"	"Survivor"
 		"SFUI_Map_fy_pool_day"			"Pool day"
+		"SFUI_Map_surf_castle"			"Surf Castle"
+		"SFUI_Map_surf_ski_2"			"Surf Ski"
 		
 		// Single player dialog
 		"SFUI_CreateSinglePlayerTitle"		"SINGLE PLAYER"
