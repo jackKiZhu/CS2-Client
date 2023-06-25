@@ -1,5 +1,5 @@
 local bannedPlayers = {
-    "[U:1:372278500]", -- Example how to add a banned player
+    "76561198332544228", -- Example how to add a banned player. The system uses SteamID64 (Dec)
 }
 
 local banlistCount = 0
@@ -16,12 +16,19 @@ function PrintBanList()
     end
 end
 
+function ShowBanList()
+	for k,v in ipairs(bannedPlayers) do
+		print(k, v)
+	end
+end
+
 function CheckBanList(event)
     if GetMapName() == "<empty>" then
         print("We are in the menu, don't do anything!")
     else
+        DeepPrintTable(event)
         for _, id in ipairs(bannedPlayers) do
-            if(id == event.networkid) then
+            if(id == event.xuid) then
                 SendToServerConsole("kickid " .. event.userid .. " You have been banned from this server!")
             else
                 -- Do nothing. Player is not on ban list
@@ -40,6 +47,7 @@ end
 function Activate()
     ListenToGameEvent("player_connect", CheckBanList, nil)
     Convars:RegisterCommand("ReloadBanList", ReloadBanList, "Writes all cvars into a the statusConvar.cfg", 0x1000)
+    Convars:RegisterCommand("PrintBanList", ShowBanList, "Prints the banlist into the server console", 0x1000)
 end
 
 Activate()
