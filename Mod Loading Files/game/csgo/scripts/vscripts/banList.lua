@@ -1,5 +1,5 @@
-local bannedPlayers = {
-    "76561198332544228", -- Example how to add a banned player. The system uses SteamID64 (Dec)
+local bannedPlayers = { -- You can add players to the banlist using their SteamID64
+    "76561198332544228",
 }
 
 local banlistCount = 0
@@ -9,29 +9,26 @@ function PrintBanList()
     for _, id in ipairs(bannedPlayers) do
         banlistCount = banlistCount + 1
     end
-    if banlistCount == 1 then
+
+    if banlistCount > 0 then
         print("Found " .. banlistCount .. " banned player in script.")
     else
-        print("Found " .. banlistCount .. " banned players in script.")
+        print("Found no banned players in script.")
     end
 end
 
 function ShowBanList()
-	for k,v in ipairs(bannedPlayers) do
-		print(k, v)
-	end
+    for k,v in ipairs(bannedPlayers) do
+        print(k, v)
+    end
 end
 
 function CheckBanList(event)
-    if GetMapName() == "<empty>" then
-        print("We are in the menu, don't do anything!")
-    else
+    if GetMapName() ~= "<empty>" then -- if we're not in menu check for banned players
         DeepPrintTable(event)
         for _, id in ipairs(bannedPlayers) do
             if(id == event.xuid) then
                 SendToServerConsole("kickid " .. event.userid .. " You have been banned from this server!")
-            else
-                -- Do nothing. Player is not on ban list
             end
         end
     end
