@@ -28464,7 +28464,6 @@
 		"SFUI_MapGroup_Tooltip_Desc_Skirmish"  "This map group contains War Games."
 
 		"SFUI_MapGroup_Tooltip_Desc_cs2"	"This map group contains the official CS:2 maps"
-		"SFUI_MapGroup_Tooltip_Desc_csgo"	"This map group contains the ported versions of CS:GO maps (may have graphical & gameplay issues)"
 		"SFUI_MapGroup_Tooltip_Desc_fun"	"This map group contains maps that are made just for playing casually and are not meant for serious gameplay"
 
 		//Hydra Maps

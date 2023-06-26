@@ -94,7 +94,6 @@
 					"mapgroupsSP"
 					{
 						"mg_cs2"		"0"
-						"mg_csgo"		"1"
 						"mg_fun"		"2"
 					}
 
@@ -102,7 +101,6 @@
 					"mapgroupsMP"
 					{
 						"mg_cs2"		"0"
-						"mg_csgo"		"1"
 						"mg_fun"		"2"
 					}
 
@@ -407,7 +405,6 @@
 					"mapgroupsSP"
 					{
 						"mg_cs2"		"0"
-						"mg_csgo"		"1"
 						"mg_fun"		"2"
 					}
 
@@ -415,7 +412,6 @@
 					"mapgroupsMP"
 					{
 						"mg_cs2"		"0"
-						"mg_csgo"		"1"
 						"mg_fun"		"2"
 					}
 				}
@@ -830,22 +826,6 @@
 			{
 				"de_mirage"	""
 				"de_dust2"	""
-			}
-		}
-
-		"mg_csgo"
-		{
-			"imagename"				"mapgroup-reserves"
-			"nameID"				"#SFUI_Mapgroup_csgo"
-			"tooltipID"				"#SFUI_MapGroup_Tooltip_Desc_csgo"
-			"tooltipMaps"			""
-			"name"					"mg_csgo"
-			"grouptype"				"reserves"
-			"icon_image_path"		"map_icons/mapgroup_icon_reserves"
-			"maps"
-			{
-				"de_vertigo"	""
-				"de_cbble"		""
 			}
 		}
 
