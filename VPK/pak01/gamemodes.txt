@@ -46,13 +46,15 @@
 					// Map groups for offline modes
 					"mapgroupsSP"
 					{
+						"mg_de_dust2"		"0"
 						"mg_de_mirage"		"0"
+						"mg_de_nuke"		"0"
+						"mg_cs_office"		"0"
 					}
 
 					// Map groups for online modesw
 					"mapgroupsMP"
 					{
-						"mg_casualdelta"		"0"
 					}
 				}
 	
@@ -93,15 +95,15 @@
 					// Map groups for offline modes
 					"mapgroupsSP"
 					{
-						"mg_cs2"		"0"
-						"mg_fun"		"2"
+						"mg_de_dust2"	"0"
+						"mg_de_mirage"	"0"
+						"mg_de_nuke"	"0"
+						"mg_cs_office"	"0"
 					}
 
 					// Map groups for online modes
 					"mapgroupsMP"
 					{
-						"mg_cs2"		"0"
-						"mg_fun"		"2"
 					}
 
 
@@ -144,13 +146,11 @@
 					// Map groups for offline modes
 					"mapgroupsSP"
 					{
-						"mg_de_dust2"		"0"
 					}
 
 					// Map groups for online modes
 					"mapgroupsMP"
 					{
-						"mg_de_dust2"		"0"
 					}
 				}
 
@@ -404,15 +404,15 @@
 					// Map groups for offline modes
 					"mapgroupsSP"
 					{
-						"mg_cs2"		"0"
-						"mg_fun"		"2"
+						"mg_de_dust2"	"0"
+						"mg_de_mirage"	"0"
+						"mg_de_nuke"	"0"
+						"mg_cs_office"	"0"
 					}
 
 					// Map groups for online modes
 					"mapgroupsMP"
 					{
-						"mg_cs2"		"0"
-						"mg_fun"		"2"
 					}
 				}
 			}
@@ -589,7 +589,7 @@
 					// Map groups for offline modes
 					"mapgroupsSP"
 					{
-						"mg_skirmish_armsrace"				"0"
+						//"mg_skirmish_armsrace"				"0"
 						//"mg_skirmish_demolition"			"1"
 						//"mg_skirmish_flyingscoutsman"		"2"
 						//"mg_skirmish_retakes"				"3"
@@ -605,7 +605,7 @@
 					// Map groups for online modes
 					"mapgroupsMP"
 					{
-						"mg_skirmish_armsrace"				"0"
+						//"mg_skirmish_armsrace"				"0"
 						//"mg_skirmish_demolition"			"1"
 						//"mg_skirmish_flyingscoutsman"		"2"
 						//"mg_skirmish_retakes"				"3"
@@ -812,56 +812,70 @@
 				"de_vertigo"		""
 			}
 		}
-				
-		"mg_cs2"
+
+		"mg_cs2_defuse"
 		{
 			"imagename"				"mapgroup-active"
-			"nameID"				"#SFUI_Mapgroup_cs2"
+			"nameID"				"#SFUI_Mapgroup_cs2_defuse"
 			"tooltipID"				"#SFUI_MapGroup_Tooltip_Desc_cs2"
 			"tooltipMaps"			""
-			"name"					"mg_cs2"
+			"name"					"mg_cs2_defuse"
 			"grouptype"				"active"
 			"icon_image_path"		"map_icons/mapgroup_icon_active"
 			"maps"
 			{
+				"de_dust2"	""				
 				"de_mirage"	""
-				"de_dust2"	""
+				"de_nuke"	""
+			}
+		}
+		
+		"mg_cs2_hostage"
+		{
+			"imagename"				"mapgroup-active"
+			"nameID"				"#SFUI_Mapgroup_cs2_hostage"
+			"tooltipID"				"#SFUI_MapGroup_Tooltip_Desc_cs2"
+			"tooltipMaps"			""
+			"name"					"mg_cs2_hostage"
+			"grouptype"				"active"
+			"icon_image_path"		"map_icons/mapgroup_icon_active"
+			"maps"
+			{
+				"cs_office"	""
 			}
 		}
 
-		"mg_fun"
+		"mg_cs2"
 		{
-			"imagename"				"mapgroup-reserves"
-			"nameID"				"#SFUI_Mapgroup_fun"
-			"tooltipID"				"#SFUI_MapGroup_Tooltip_Desc_fun"
+			"imagename"				"mapgroup-active"
+			"nameID"				"#SFUI_Mapgroup_cs2_defuse"
+			"tooltipID"				"#SFUI_MapGroup_Tooltip_Desc_cs2"
 			"tooltipMaps"			""
-			"name"					"mg_fun"
-			"grouptype"				"reserves"
-			"icon_image_path"		"map_icons/mapgroup_icon_reserves"
+			"name"					"mg_cs2_defuse"
+			"grouptype"				"active"
+			"icon_image_path"		"map_icons/mapgroup_icon_active"
 			"maps"
 			{
-				"aim_ag_texture2"	""
-				"fy_pool_day"		""
-				"surf_castle"		""
-				"surf_ski_2"		""
+				"de_dust2"	""				
+				"de_mirage"	""
+				"de_nuke"	""
+				"cs_office"	""
 			}
 		}
 		
 		"mg_casualdelta"
 		{
 			"imagename"				"mapgroup-casualdelta"
-			"nameID"				"#SFUI_Mapgroup_casualdelta"
-			"tooltipID"				"#SFUI_MapGroup_Tooltip_Desc_CasualDelta"
-			"tooltipMaps"			"de_mirage" //,de_nuke" //de_inferno,
+			"nameID"				"#SFUI_Mapgroup_limitedtest"
+			"tooltipID"				"#SFUI_MapGroup_Tooltip_Desc_LimitedTest"
+			"tooltipMaps"			"de_nuke,cs_office"
 			"name"					"mg_casualdelta"
 			"grouptype"				"reserves"
 			"icon_image_path"		"map_icons/mapgroup_icon_reserves"
 			"maps"
 			{
-				"de_mirage"		""
-				// "de_inferno"	""
-				// "de_overpass"	""
-				// "de_nuke"		"" // moved to sigma temporarily
+				"de_nuke"		""
+				"cs_office"		""
 			}
 		}
 		
@@ -3516,247 +3530,6 @@
 			"nameID"				"#SFUI_Map_de_mirage_scrimmagemap"
 			"name"					"de_mirage_scrimmagemap"
 			"imagename"				"map-mirage-overall"
-			"default_game_type"		"0" // classic
-			"default_game_mode"		"0" // casual
-			"t_arms"				"models/weapons/t_arms_leet.vmdl"
-			"t_models"
-			{
-				"tm_leet_variantA"	""
-				"tm_leet_variantB"	""
-				"tm_leet_variantC"	""
-				"tm_leet_variantD"	""
-				"tm_leet_variantE"	""
-			}
-			"ct_arms"			"models/weapons/ct_arms_sas.vmdl"
-			"ct_models"
-			{
-				"ctm_sas"		""
-				"ctm_sas_variantA"	""
-				"ctm_sas_variantB"	""
-				"ctm_sas_variantC"	""
-				"ctm_sas_variantD"	""
-			}
-		}
-
-		"de_mirage_csgo"
-		{
-			"nameID"				"#SFUI_Map_de_mirage_csgo"
-			"name"					"de_mirage"
-			"imagename"				"map-mirage-overall"
-			"default_game_type"		"0" // classic
-			"default_game_mode"		"0" // casual
-			"t_arms"				"models/weapons/t_arms_leet.vmdl"
-			"t_models"
-			{
-				"tm_leet_variantA"	""
-				"tm_leet_variantB"	""
-				"tm_leet_variantC"	""
-				"tm_leet_variantD"	""
-				"tm_leet_variantE"	""
-			}
-			"ct_arms"			"models/weapons/ct_arms_sas.vmdl"
-			"ct_models"
-			{
-				"ctm_sas"		""
-				"ctm_sas_variantA"	""
-				"ctm_sas_variantB"	""
-				"ctm_sas_variantC"	""
-				"ctm_sas_variantD"	""
-			}
-		}
-		"$2000$"
-		{
-			"nameID"				"#SFUI_Map_$2000$"
-			"name"					"$2000$"
-			"imagename"				"map-$2000$-overall"
-			"default_game_type"		"0" // classic
-			"default_game_mode"		"0" // casual
-			"t_arms"				"models/weapons/t_arms_leet.vmdl"
-			"t_models"
-			{
-				"tm_leet_variantA"	""
-				"tm_leet_variantB"	""
-				"tm_leet_variantC"	""
-				"tm_leet_variantD"	""
-				"tm_leet_variantE"	""
-			}
-			"ct_arms"			"models/weapons/ct_arms_sas.vmdl"
-			"ct_models"
-			{
-				"ctm_sas"		""
-				"ctm_sas_variantA"	""
-				"ctm_sas_variantB"	""
-				"ctm_sas_variantC"	""
-				"ctm_sas_variantD"	""
-			}
-		}
-
-		"aim_map"
-		{
-			"nameID"				"#SFUI_Map_aim_map"
-			"name"					"aim_map"
-			"imagename"				"map-aim_map-overall"
-			"default_game_type"		"0" // classic
-			"default_game_mode"		"0" // casual
-			"t_arms"				"models/weapons/t_arms_leet.vmdl"
-			"t_models"
-			{
-				"tm_leet_variantA"	""
-				"tm_leet_variantB"	""
-				"tm_leet_variantC"	""
-				"tm_leet_variantD"	""
-				"tm_leet_variantE"	""
-			}
-			"ct_arms"			"models/weapons/ct_arms_sas.vmdl"
-			"ct_models"
-			{
-				"ctm_sas"		""
-				"ctm_sas_variantA"	""
-				"ctm_sas_variantB"	""
-				"ctm_sas_variantC"	""
-				"ctm_sas_variantD"	""
-			}
-		}
-
-		"aim_texture_canyon_final"
-		{
-			"nameID"				"#SFUI_Map_aim_texture_canyon_final"
-			"name"					"aim_texture_canyon_final"
-			"imagename"				"map-aim_texture_canyon_final-overall"
-			"default_game_type"		"0" // classic
-			"default_game_mode"		"0" // casual
-			"t_arms"				"models/weapons/t_arms_leet.vmdl"
-			"t_models"
-			{
-				"tm_leet_variantA"	""
-				"tm_leet_variantB"	""
-				"tm_leet_variantC"	""
-				"tm_leet_variantD"	""
-				"tm_leet_variantE"	""
-			}
-			"ct_arms"			"models/weapons/ct_arms_sas.vmdl"
-			"ct_models"
-			{
-				"ctm_sas"		""
-				"ctm_sas_variantA"	""
-				"ctm_sas_variantB"	""
-				"ctm_sas_variantC"	""
-				"ctm_sas_variantD"	""
-			}
-		}
-
-		"de_piranesi_s2"
-		{
-			"nameID"				"#SFUI_Map_de_piranesi_s2"
-			"name"					"de_piranesi_s2"
-			"imagename"				"map-de_piranesi_s2-overall"
-			"default_game_type"		"0" // classic
-			"default_game_mode"		"0" // casual
-			"t_arms"				"models/weapons/t_arms_leet.vmdl"
-			"t_models"
-			{
-				"tm_leet_variantA"	""
-				"tm_leet_variantB"	""
-				"tm_leet_variantC"	""
-				"tm_leet_variantD"	""
-				"tm_leet_variantE"	""
-			}
-			"ct_arms"			"models/weapons/ct_arms_sas.vmdl"
-			"ct_models"
-			{
-				"ctm_sas"		""
-				"ctm_sas_variantA"	""
-				"ctm_sas_variantB"	""
-				"ctm_sas_variantC"	""
-				"ctm_sas_variantD"	""
-			}
-		}
-
-		"de_survivor_s2_nofog"
-		{
-			"nameID"				"#SFUI_Map_de_survivor_s2_nofog"
-			"name"					"de_survivor_s2_nofog"
-			"imagename"				"map-de_survivor_s2_nofog-overall"
-			"default_game_type"		"0" // classic
-			"default_game_mode"		"0" // casual
-			"t_arms"				"models/weapons/t_arms_leet.vmdl"
-			"t_models"
-			{
-				"tm_leet_variantA"	""
-				"tm_leet_variantB"	""
-				"tm_leet_variantC"	""
-				"tm_leet_variantD"	""
-				"tm_leet_variantE"	""
-			}
-			"ct_arms"			"models/weapons/ct_arms_sas.vmdl"
-			"ct_models"
-			{
-				"ctm_sas"		""
-				"ctm_sas_variantA"	""
-				"ctm_sas_variantB"	""
-				"ctm_sas_variantC"	""
-				"ctm_sas_variantD"	""
-			}
-		}
-
-		"fy_pool_day"
-		{
-			"nameID"				"#SFUI_Map_fy_pool_day"
-			"name"					"fy_pool_day"
-			"imagename"				"map-fy_pool_day-overall"
-			"default_game_type"		"0" // classic
-			"default_game_mode"		"0" // casual
-			"t_arms"				"models/weapons/t_arms_leet.vmdl"
-			"t_models"
-			{
-				"tm_leet_variantA"	""
-				"tm_leet_variantB"	""
-				"tm_leet_variantC"	""
-				"tm_leet_variantD"	""
-				"tm_leet_variantE"	""
-			}
-			"ct_arms"			"models/weapons/ct_arms_sas.vmdl"
-			"ct_models"
-			{
-				"ctm_sas"		""
-				"ctm_sas_variantA"	""
-				"ctm_sas_variantB"	""
-				"ctm_sas_variantC"	""
-				"ctm_sas_variantD"	""
-			}
-		}
-		"surf_castle"
-		{
-			"nameID"				"#SFUI_Map_surf_castle"
-			"name"					"surf_castle"
-			"imagename"				"map-surf_castle-overall"
-			"default_game_type"		"0" // classic
-			"default_game_mode"		"0" // casual
-			"t_arms"				"models/weapons/t_arms_leet.vmdl"
-			"t_models"
-			{
-				"tm_leet_variantA"	""
-				"tm_leet_variantB"	""
-				"tm_leet_variantC"	""
-				"tm_leet_variantD"	""
-				"tm_leet_variantE"	""
-			}
-			"ct_arms"			"models/weapons/ct_arms_sas.vmdl"
-			"ct_models"
-			{
-				"ctm_sas"		""
-				"ctm_sas_variantA"	""
-				"ctm_sas_variantB"	""
-				"ctm_sas_variantC"	""
-				"ctm_sas_variantD"	""
-			}
-		}
-
-		"surf_ski_2"
-		{
-			"nameID"				"#SFUI_Map_surf_ski_2"
-			"name"					"surf_ski_2"
-			"imagename"				"map-surf_ski_2-overall"
 			"default_game_type"		"0" // classic
 			"default_game_mode"		"0" // casual
 			"t_arms"				"models/weapons/t_arms_leet.vmdl"
