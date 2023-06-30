@@ -21,7 +21,7 @@
 					"descID"			"#SFUI_GameModeCasualDesc"
 					"descID_List"		"#SFUI_GameModeCasualDescSPList"
 					"uid"				"1"
-					"maxplayers"		"20"
+					"maxplayers"		"64"
 
 					// These are the descriptive ui elements to display in the information box on.
 					// These key/values should be pairs of strings.  The "key" will appear in the left
@@ -41,6 +41,8 @@
 					{
 						"exec" "gamemode_casual.cfg"
 						"exec" "gamemode_casual_server.cfg"
+						"exec" "loadPatches.cfg"
+						"exec" "server_gamemode.cfg"
 					}
 
 					// Map groups for offline modes
@@ -90,6 +92,8 @@
 						"exec" "gamemode_competitive.cfg"
 						"exec_offline" "gamemode_competitive_offline.cfg"
 						"exec" "gamemode_competitive_server.cfg"
+						"exec" "loadPatches.cfg"
+						"exec" "server_gamemode.cfg"
 					}
 					
 					// Map groups for offline modes
@@ -399,6 +403,8 @@
 					{
 						"exec" "gamemode_deathmatch.cfg"
 						"exec" "gamemode_deathmatch_server.cfg"
+						"exec" "loadPatches.cfg"
+						"exec" "server_gamemode.cfg"
 					}
 
 					// Map groups for offline modes
