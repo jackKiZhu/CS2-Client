@@ -1,5 +1,5 @@
-local bannedPlayers = { -- You can add players to the banlist using their SteamID64
-    "76561198332544228",
+local bannedPlayers = { -- You can add players to the banlist using their SteamID3
+    "[U:1:372278500]",
 }
 
 local banlistCount = 0
@@ -27,7 +27,7 @@ function CheckBanList(event)
     if GetMapName() ~= "<empty>" then -- if we're not in menu check for banned players
         DeepPrintTable(event)
         for _, id in ipairs(bannedPlayers) do
-            if(id == event.xuid) then
+            if(id == event.networkid) then
                 SendToServerConsole("kickid " .. event.userid .. " You have been banned from this server!")
             end
         end
